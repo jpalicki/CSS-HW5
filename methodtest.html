@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <title>HTTP Practice</title>
+</head>
+<body>
+    <form>
+        <label for="record">Record ID:</label>
+        <input type="number" id="id" name="id">
+        <br>
+        <label for="title">Title:</label>
+        <input type="text" id="article_name" name="article_name">
+        <br>
+        <label for="body">Body:</label>
+        <textarea id="article_body" name="article_body"></textarea>
+        <br>
+        <!-- Implement date <input type="number" id="id" name="id"> -->
+    </form>
+    <button id="postBtn">Post</button>
+    <button id="getBtn">Get</button>
+    <button id="putBtn">Put</button>
+    <button id="deleteBtn">Delete</button>
+    <br>
+    <output id="response"></output>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

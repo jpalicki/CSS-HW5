@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Personal Portfolio</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta charset="UTF-8">
+<meta name="author" content="John Palicki">
+<link rel="stylesheet" href="style.css">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PWF39W1598"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PWF39W1598');
+</script>
+<body>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="resume.html">Resume</a> 
+        <a href="portfolio.html">Portfolio</a> 
+        <a href="contact.html">Contact Me</a> 
+        <a href="methodtest.html">HTTP Javascript</a>
+        <a href="webcomponent.html">Button Count</a>
+      </nav>
+<main class = "portfolio">
+    <h1>Personal Portfolio</h1>
+    <p>Below you'll find work sourced from the stock photo website Pexels that I thought was worth sharing. </p>
+        <h2>Digital Art</h2>
+    <div class="images">
+        <figure>
+        <picture>
+            <source media="(min-width:770px)" srcset="images/balloons(tablet).jpg">
+            <source media="(min-width:480px)" srcset="images/balloons(mphone).jpg">
+            <img src="images/balloons(sphone).jpg" alt="Hot Air Balloons" style="width: auto" 
+                onerror="this.onerror=null;" this.src='balloons(desktop.jpg)'>
+        </picture>
+        <figcaption><br><cite><a class = "source" href="https://www.pexels.com/photo/hot-air-ballons-in-the-sky-2325446/">Hot Air Balloons in the Sky</a></cite> by Francesco Ungaro</figcaption>
+        </figure>
+
+        <figure>
+        <picture>
+            <source media="(min-width:770px)" srcset="images/fuji(tablet).jpg">
+            <source media="(min-width:480px)" srcset="images/fuji(mphone).jpg">
+            <img src="images/fuji(sphone).jpg" alt="Mt. Fuji in Japan" style="width: auto"
+            onerror="this.onerror=null;" this.src='fuji(desktop.jpg)'>
+            </picture>
+        <figcaption><br><cite><a class = "source" href="https://www.pexels.com/photo/mt-fuji-japan-1108701/">Mt. Fuji, Japan</a></cite> by Liger Pham</figcaption>
+        </figure>
+
+    </div>
+</main>
+<footer>
+    <p>CSS 134B Webpage</p>
+    <a href="mailto:johnapalicki@gmail.com">johnapalicki@gmail.com</a>
+</footer>
+</body>
+</html>

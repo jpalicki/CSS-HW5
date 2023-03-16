@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <title>CRUD Blog</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        body {
+            background-color: rgb(119, 214, 243);
+            font-family:'Gill Sans', sans-serif;
+            margin: 10px;
+            flex: grid;
+            padding: 1em;
+            grid-column: auto;
+        }
+        h1 {
+            color:rgb(38, 26, 54);
+        }
+        div {
+            display:inline;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        p {
+            display:inline;
+            padding: 0.5%;
+        }
+        button {
+            margin: 5px;
+            background-color: rgb(255, 255, 255);
+            border: 0px;
+            padding: 5px;
+        }
+        dialog {
+            background-color: rgb(234, 203, 252);
+            font-size: 1.35rem;
+        }
+        form {
+            display: flex;
+            align-content: start;   
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Blog</h1>
+    <dialog id='newPost'>
+        <form method = 'dialog'>
+            <label for="Title">Title:</label>
+            <input type="text" id="blogTitle" name="blogTitle">
+            <br>
+            <label for="Date">Date:</label>
+            <input type="date" id="day" name="day" value = "2023-03-01">
+            <br>
+            <label for="Summary">Summary:</label>
+            <input type="text" id="sum" name="sum">
+            <br>
+
+            <button id="cancel">Cancel</button>
+            <button id="save">Save</button>
+        </form>
+    </dialog>
+    <button id="addPostBtn">Add a post</button>
+    <script type="module" src="styledposts.js"></script>
+    <script type="module" src="styledmethods.js"></script>
+</body>
+</html>

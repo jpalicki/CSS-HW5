@@ -1,0 +1,203 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    --bar: #E9D6EC;
+    --main: #f5eaf7;
+
+
+}
+
+@font-face {
+    font-family: 'Comic-Sans';
+    src: url('images/ComicNeueSansID.ttf');
+}
+
+body {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(0, 0, 0); 
+    background-color: black;
+    display: grid;
+}
+
+nav {
+    margin:0px;
+    bottom:0px;
+    padding: 20px;
+    background-color:var(--bar);    
+    text-align: center;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+nav > a {
+    text-decoration: none;  
+    color: black;
+}
+
+main, .homepage, .contact, .resume, .portfolio {
+    background-color: var(--main); 
+    grid-row: 2 / 3;
+    margin: 0;
+    padding: 2.5%;
+}
+
+.homepage {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.intro {
+    display: inline-block;
+    width: 100ch;
+    text-align: left;
+}
+
+
+.resumeflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+}
+.resumetext {
+    max-width:50ch;
+}
+.images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer {
+    background-color: var(--bar);    
+    text-align: center;
+    grid-row: 3 / 4;
+    margin: 0;
+    padding: 20px;
+}
+
+footer > a {
+    text-decoration: none;  
+    color:black;
+
+}
+
+.animation {
+    display: flex;
+    justify-content: center;
+}
+
+.animationcaption {
+    text-align: center;
+}
+
+.window {
+    background-image: url("images/window.jpg");
+    height: 360px;
+    width: 540px;
+}
+
+.sponge{
+    background-image: url("images/spongesmall.jpg");
+    height: 50%;
+    width: 50%;
+    animation: left-to-right 3s ease-in-out forwards infinite;
+}
+
+.window:hover .sponge {
+    animation-play-state: paused;
+}
+
+.source {
+    text-decoration: none;
+    color:#6051e6;
+    font-family: 'Comic-Sans';
+}
+
+figcaption {
+    font-size: 1.75rem;
+    font-family: 'Comic-Sans';
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    25% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateY(100%) translateX(100%);
+    }
+    75% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0%) translateY(0%);
+    }
+}
+
+@media (max-width: 480px) { 
+    .contact .resume {
+        text-align: center;
+    }
+    .window {
+        background-image: url("images/window.jpg");
+        height: 180px;
+        width: 270px;
+    }
+    #comment {
+        max-width: 30ch;
+    }
+    nav > a {
+        font-size: 1.5rem;
+        padding: 2%;
+    }
+    h1 {
+        font-size: 2rem;
+        color: #866547;
+        text-align: center;
+    }
+    .intro {
+        display: inline-block;
+        width: auto;
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) { 
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        color:#96BDC6
+    }
+    .intro {
+        display: inline-block;
+        width: auto;
+        text-align: left;
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        color:#302c74
+
+    }
+    .intro {
+        display: inline-block;
+        width: auto;
+        text-align: left;
+    }
+}
+
